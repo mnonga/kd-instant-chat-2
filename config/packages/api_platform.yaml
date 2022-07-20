@@ -1,0 +1,37 @@
+api_platform:
+    # The title of the API.
+    title: 'Nonga API'
+
+    # The description of the API.
+    description: 'This API has no description'
+    # The version of the API.
+    version: '0.0.1'
+    openapi:
+        # The contact information for the exposed API.
+        contact:
+            # The identifying name of the contact person/organization.
+            name: 'Michee NONGA'
+            # The URL pointing to the contact information. MUST be in the format of a URL.
+            url: 'https://github.com/mnonga'
+            # The email address of the contact person/organization. MUST be in the format of an email address.
+            email: 'nongamichee2@gmail.com'
+        # A URL to the Terms of Service for the API. MUST be in the format of a URL.
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity', '%kernel.project_dir%/config/api_platform/resources']
+    formats:
+        json: [ 'application/json' ]
+        html: [ 'text/html' ]
+        graphql: ['application/graphql']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
+            apiKey2:
+                name: 'X-AUTH-TOKEN'
+                type: header
+    defaults:
+        pagination_enabled: false

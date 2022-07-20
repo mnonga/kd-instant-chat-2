@@ -1,0 +1,16 @@
+HTTP/1.1 400 Bad Request
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: application/problem+json; charset=utf-8
+Date: Fri, 25 Feb 2022 13:29:07 GMT
+Expires: Fri, 25 Feb 2022 13:29:07 GMT
+Link: <http://localhost:8000/api/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
+Set-Cookie: PHPSESSID=705ecguvikhg7th60kiraus8pb; path=/; httponly; samesite=lax
+X-Content-Type-Options: nosniff
+X-Debug-Token: f37385
+X-Debug-Token-Link: http://localhost:8000/_profiler/f37385
+X-Frame-Options: deny
+X-Powered-By: PHP/7.4.13
+X-Previous-Debug-Token: 2ae7af
+X-Robots-Tag: noindex
+Transfer-Encoding: chunked
+
