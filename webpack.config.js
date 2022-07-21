@@ -20,8 +20,7 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
-    .addEntry('app_react', './assets/app_react.jsx')
+    .addEntry('app', './assets/js/app.jsx')
     // .addStyleEntry('app_css', './assets/styles/app.css')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
@@ -73,7 +72,7 @@ Encore
     // uncomment if you're having problems with a jQuery plugin
     .autoProvidejQuery()
 
-    .enableVueLoader()
+    //.enableVueLoader()
 
     .enablePostCssLoader((options) => {
         /*options.config = {

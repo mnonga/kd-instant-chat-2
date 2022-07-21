@@ -1,65 +1,9 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {Input, Button, Alert} from "@material-tailwind/react";
 import {FaSpinner, FaUserCircle} from "react-icons/fa";
-import {post, postGraphql} from "../utils";
+import { postGraphql} from "../utils";
 import {MdReplay, MdSend} from "react-icons/md";
-import {
-    SubscriptionClient,
-    SubscriptionClientOptions,
-} from '@graphql-sse/client';
+import {LoginForm} from "../components/login_form";
 
-import {SSE} from "sse.js"
-
-/*
-const url = JSON.parse(document.getElementById("mercure-url").textContent);
-alert(url)
-const eventSource = new EventSource(url, {withCredentials: true});
-eventSource.onmessage = (event) => {
-    // Will be called every time an update is published by the server
-    alert(JSON.parse(event.data));
-}
-eventSource.onerror = (error)=>{alert("error: "+JSON.stringify(error))}
-eventSource.onopen = ()=>{console.log("eventSource onopen")}*/
-
-
-
-function LoginForm({onSuccess} = props) {
-    const [username, setUsername] = useState('user1@gmail.com');
-    const [password, setPassword] = useState('12345678');
-    const [loading, setLoading] = useState(false);
-    const [failed, setFailed] = useState(false);
-
-    //useEffect(()=>{login()},[]);
-
-    const login = async function () {
-        setLoading(true);
-        setFailed(false);
-        try {
-            let data = await post('/api/login', {username, password});
-            if (onSuccess) onSuccess(data);
-        } catch (response) {
-            setFailed(true);
-        } finally {
-            setLoading(false);
-        }
-    }
-
-    return (
-        <div className="fixed inset-0 bg-black/30 shadow flex items-center justify-center">
-            <div className="w-1/3 p-10 bg-white space-y-5">
-                <Input label="Username" placeholder="Username" value={username} onInput={(e) => {
-                    setUsername(e.target.value)
-                }}/>
-                <Input label="Password" type="password" placeholder="Password" value={password} onInput={(e) => {
-                    setPassword(e.target.value)
-                }}/>
-                <Button onClick={() => login()}>Log in {loading &&
-                <FaSpinner className="inline-block text-white animate-spin"/>}</Button>
-                {failed && <Alert color="red">Username or password not valid !</Alert>}
-            </div>
-        </div>
-    );
-}
 
 export default function ({name} = props) {
     const [loggedIn, setLoggedIn] = useState(false);
@@ -69,7 +13,6 @@ export default function ({name} = props) {
     const [threads, setThreads] = useState([]);
     const [thread, setThread] = useState();
     const [friend, setFriend] = useState();
-    const [friends, setFriends] = useState([]);
     const [loading, setLoading] = useState(false);
     const [sending, setSending] = useState(false);
     const inputRef = useRef(null);
@@ -339,38 +282,6 @@ mutation{
     }
 
 
-    /*const subscribe = async function () {
-        let mercureUrl;
-        try {
-            let data = await postGraphql('/api/graphql', `
-                subscription { updateThreadSubscribe(input:{id: "${thread.id}"}){
-                    thread{
-                        id
-                        subject
-                        messages{
-                            id
-                            content
-                        }
-                    }
-                    mercureUrl
-                } }`, user.apiToken);
-            mercureUrl = data.data.updateThreadSubscribe.mercureUrl
-            console.log(mercureUrl)
-        } catch (response) {
-
-        } finally {
-
-        }
-
-        if(mercureUrl){
-            const eventSource = new EventSource(mercureUrl+'&topic=*');
-            eventSource.onmessage = (event) => {
-                alert(JSON.stringify(event.data));
-            }
-            eventSource.onerror = (error)=>{alert("error: "+JSON.stringify(error))}
-            eventSource.onopen = ()=>{console.log("eventSource onopen")}
-        }
-    };*/
 
 
     useEffect(() => {

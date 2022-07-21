@@ -11,33 +11,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+
     /**
      * @Route("/", name="home")
      */
-    public function index(): Response
-    {
-        return $this->render('home/index.html.twig', [
-            'controller_name' => 'LipaController',
-        ]);
-    }
-
-    /**
-     * @Route("/react", name="home")
-     */
-    public function indexReact(Request $request, Discovery $discovery, Authorization $authorization): Response
+    public function index(Request $request, Discovery $discovery, Authorization $authorization): Response
     {
         // Link: <https://hub.example.com/.well-known/mercure>; rel="mercure"
         //$discovery->addLink($request);
         //$authorization->setCookie($request, ["http://localhost:8000/api/messages/*"]);
 
-        return $this->render('home/index_react.html.twig', []);
+        return $this->render('home/index.html.twig', []);
     }
 
-    /**
-     * @Route("/api/stats", name="api.membres.stats")
-     */
-    public function test(): Response
-    {
-        return $this->json([]);
-    }
 }

@@ -2,32 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b48d1b30-f9bb-4881-8207-7acf5cf96210" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/kd-instant-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kd-instant-chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app_react.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/router/eventHub.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/router/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/views/CreateMembre.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/views/InstantChat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/views/InstantChat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/views/ListMembre.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/views/StatMembre.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/ApiKeyAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/ApiKeyAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProvinceController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProvinceType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index_react.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index_react.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_react.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index_react.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/province/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/updates.db" beforeDir="false" afterPath="$PROJECT_DIR$/updates.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -140,6 +157,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
       <path value="$PROJECT_DIR$/vendor/symfony/mercure" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="2CAyVFSzEij6JinACqPNtvYb9yE" />
@@ -164,6 +182,10 @@
       <recent name="D:\michee\dev\www\jc\kd-instant-chat\templates" />
       <recent name="D:\michee\dev\www\jc\kd-instant-chat\templates\home" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\michee\dev\www\jc\kd-instant-chat-2\assets" />
+      <recent name="D:\michee\dev\www\jc\kd-instant-chat-2\assets\js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -174,6 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658259726146</updated>
       <workItem from="1658259731131" duration="62831000" />
+      <workItem from="1658391715764" duration="4743000" />
     </task>
     <servers />
   </component>
@@ -190,5 +213,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
