@@ -56,3 +56,5 @@ Connaître le nombre de messages non lus.
 utilisateur B ne peux pas envoyer des messages en
 se faisant passer pour un autre. Il ne pourra pas non plus lire, via l’api, des messages qui ne lui sont
 pas adressés.
+
+mercure -d -a localhost:5000 -X -c * --jwt-key "!ChangeMe!" --publisher-jwt-key "!ChangeMe!"

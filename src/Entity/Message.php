@@ -12,7 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=MessageRepository::class)
  */
-#[ApiResource(graphql: [
+#[ApiResource(
+    graphql: [
     'collection_query'=>['security' => "is_granted('ROLE_USER')"],
     'item_query' => ['security' => "is_granted('MESSAGE_READ',object)"],
     //'create', //=> ['security' => "is_granted('MESSAGE_CREATE',object)"],
@@ -20,7 +21,7 @@ use Doctrine\ORM\Mapping as ORM;
     'create' => [
         'mutation' => MessageMutationResolver::class,
     ]
-])]
+], mercure: true)]
 class Message
 {
     /**

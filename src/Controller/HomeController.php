@@ -3,7 +3,10 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mercure\Authorization;
+use Symfony\Component\Mercure\Discovery;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
@@ -21,10 +24,13 @@ class HomeController extends AbstractController
     /**
      * @Route("/react", name="home")
      */
-    public function indexReact(): Response
+    public function indexReact(Request $request, Discovery $discovery, Authorization $authorization): Response
     {
-        return $this->render('home/index_react.html.twig', [
-        ]);
+        // Link: <https://hub.example.com/.well-known/mercure>; rel="mercure"
+        //$discovery->addLink($request);
+        //$authorization->setCookie($request, ["http://localhost:8000/api/messages/*"]);
+
+        return $this->render('home/index_react.html.twig', []);
     }
 
     /**
